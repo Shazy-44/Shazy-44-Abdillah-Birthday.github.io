@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Abdillah ❤️</title>
+<style>
+body{
+    margin:0;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+.card{
+    background:white;
+    max-width:850px;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+h1{
+    text-align:center;
+    color:#d62839;
+    margin-bottom:20px;
+}
+#message{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#333;
+    white-space:pre-wrap;
+    border-right:2px solid #d62839;
+    overflow:hidden;
+}
+.signature{
+    margin-top:25px;
+    text-align:right;
+    font-weight:bold;
+    color:#d62839;
+}
+</style>
+</head>
+<body>
+<audio id="bgmusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+<div class="card">
+    <h1>🎉 Happy Birthday Abdillah ❤️</h1>
+<div id="message"></div>
+<div class="signature">— Shazy ❤️</div>
+</div>
+<script>
+const text = `Happy Birthday, my beloved brother Abdillah ❤️
+From being schoolmates, to friends, and now brothers, Alhamdulillah, it has been a beautiful journey.
+I've always believed that my journey to Iran, as difficult as it seemed at the beginning, was not only meant for my growth but also to bring amazing people into my life. You are one of those people, and for that, I thank Allah.
+Brother, I am truly grateful to have you in my life. Our bond has always felt natural and effortless, and I cherish it more than you know. One thing I don't say often enough is that I love you dearly, my brother.
+On your special day, I also ask for your forgiveness for anything I may have done to hurt you, knowingly or unknowingly.
+May Allah bless you with happiness, success, good health, and endless barakah. Keep shining and keep being the amazing brother that you are.
+Happy Birthday once again, brother.
+I love you so very much ♥️`;
+let i = 0;
+function typeWriter(){
+    if(i < text.length){
+        document.getElementById("message").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 35);
+    }
+}
+window.onload = typeWriter;
+</script>
+</body>
+</html>
